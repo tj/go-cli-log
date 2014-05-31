@@ -15,6 +15,8 @@
          error : something exploded
 ```
 
+  View the [docs](https://godoc.org/github.com/visionmedia/go-cli-log).
+
 ## Example
 
 ```go
@@ -39,3 +41,7 @@ func main() {
   fmt.Println()
 }
 ```
+
+# License
+
+ MIT
