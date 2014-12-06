@@ -15,7 +15,7 @@
          error : something exploded
 ```
 
-  View the [docs](https://godoc.org/github.com/visionmedia/go-cli-log).
+  View the [docs](https://godoc.org/github.com/tj/go-cli-log).
 
 ## Example
 
