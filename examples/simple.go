@@ -1,6 +1,6 @@
 package main
 
-import "github.com/visionmedia/go-cli-log"
+import "github.com/tj/go-cli-log"
 import "errors"
 import "fmt"
 
