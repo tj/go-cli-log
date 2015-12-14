@@ -1,6 +1,9 @@
 package log
 
-import "fmt"
+import (
+	"fmt"
+	"os"
+)
 
 // Verbose enables debug.
 var Verbose = false
@@ -30,5 +33,6 @@ func Warn(format string, args ...interface{}) {
 
 // Error.
 func Error(err error) {
-	fmt.Printf("\033[31m%"+Width+"s \033[90m:\033[0m %s\n", "error", err)
+	p := fmt.Sprintf("\033[31m%"+Width+"s \033[90m:\033[0m ", "error")
+	fmt.Fprintf(os.Stderr, p+"%s\n", err.Error())
 }
