@@ -36,3 +36,9 @@ func Error(err error) {
 	p := fmt.Sprintf("\033[31m%"+Width+"s \033[90m:\033[0m ", "error")
 	fmt.Fprintf(os.Stderr, p+"%s\n", err.Error())
 }
+
+// Fatal.
+func Fatal(err error) {
+	Error(err)
+	os.Exit(1)
+}
